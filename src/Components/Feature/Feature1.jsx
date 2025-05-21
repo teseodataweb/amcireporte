@@ -8,8 +8,8 @@ const Feature1 = () => {
                 <div className="container">
                     <div className="section-title text-center mxw-685 mx-auto wow fadeInUp" data-wow-delay=".2s">
                         <SectionTitle
-                            SubTitle="Why using our app"
-                            Title="Our app is great for individuals, startups and enterprises"
+                            SubTitle="📌 ¿Por qué descargar este reporte?"
+                            Title="Una Herramienta Esencial para Tomar Decisiones en el Sector del Concreto"
                         ></SectionTitle>                       
                     </div>
                     <div className="wcu-wrapper style1">
@@ -18,18 +18,18 @@ const Feature1 = () => {
                                 <div className="wcu-content">
                                     <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_1.svg"
-                                        title="High usability"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        title="Análisis de Mercado por Región"
+                                        content="Conoce el comportamiento del consumo y precios del concreto en el norte, centro, sur y bajío de México."
                                     ></FeatureCard>
                                      <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_2.svg"
-                                        title="Action Reminder"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        title="Oportunidades para Concreteros"
+                                        content="Identifica zonas con alta demanda donde los concreteros independientes pueden competir y crecer."
                                     ></FeatureCard>    
                                       <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_3.svg"
-                                        title="Merge Files"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        title="Proyecciones Estratégicas hasta 2032"
+                                        content="Accede a estimaciones sobre producción, consumo y valor del mercado para anticiparte al cambio."
                                     ></FeatureCard> 
                                 </div>
                             </div>
@@ -45,18 +45,18 @@ const Feature1 = () => {
                                 <div className="wcu-content">
                                     <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_4.svg"
-                                        title="Free Live Chat"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        title="Factores Económicos Críticos"
+                                        content="Inflación, costos logísticos, financiamiento y normativas ambientales explicados con claridad."
                                     ></FeatureCard>
                                     <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_5.svg"
-                                        title="Social Share"
-                                        content="There are many variations of passages of Lorem Ipsum"
-                                    ></FeatureCard>                                                                          
+                                        title="Inteligencia Artificial Aplicada"
+                                        content="El reporte utiliza modelos de análisis avanzados desarrollados por Teseo Data Lab, especializados en construcción."
+                                    ></FeatureCard>                            
                                     <FeatureCard
                                         img="/assets/images/icon/wcuIcon1_6.svg"
-                                        title="Custom Shortcuts"
-                                        content="There are many variations of passages of Lorem Ipsum"
+                                        title="Úsalo como Base de Estrategia"
+                                        content="Ideal para justificar decisiones comerciales, desarrollar propuestas, buscar inversión o definir territorios."
                                     ></FeatureCard> 
                                 </div>
                             </div>
