@@ -19,10 +19,10 @@ const Home = () => (
       cuscontent="Happy Customers"
       rating="4.8/5"
       ratingcon="Rating"
-      img="/assets/images/intro/introThumb1_1.png"
+      img="/assets/images/img/camion.webp"
     ></HeroBanner1>
     <About1
-      img1="/assets/images/about/aboutThumb1_1.png"
+      img1="/assets/images/img/tableta.webp"
       img2="/assets/images/about/aboutThumb1_2.png"
       subtitle="Acerca del Reporte AMCI"
       title="El Primer Reporte Hecho Por y Para Concreteros"
