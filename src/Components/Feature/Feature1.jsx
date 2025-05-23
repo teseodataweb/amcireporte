@@ -36,7 +36,7 @@ const Feature1 = () => {
                             <div className="col-xl-4 d-flex justify-content-center">
                                 <div className="wcu-thumb wow fadeInUp centerObject" data-wow-delay=".2s">
                                     <div className="main-thumb wow bounceInUp" data-wow-delay=".6s"><img
-                                            src="/assets/images/wcu/wcuThumb1_1.png" alt="thumb" /></div>
+                                            src="/assets/images/img/tableta2.webp" alt="thumb" /></div>
                                 </div>
                             </div>
                             <div className="col-xl-4 d-flex justify-content-center justify-content-xl-end">
