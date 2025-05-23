@@ -66,7 +66,7 @@ const Footer = () => {
                 <div className="footer-content">
                   <div class="store-links">
                     <div class="apple">
-                      <a href="#">Descargar reporte</a>
+                      <a href="#contacto">Descargar reporte</a>
                     </div>
                   </div>
                 </div>

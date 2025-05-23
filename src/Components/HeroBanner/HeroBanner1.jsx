@@ -61,7 +61,7 @@ const HeroBanner1 = ({
                       className="btn-wrapper style1 wow fadeInUp"
                       data-wow-delay=".6s"
                     >
-                      <Link className="theme-btn" to={btnurl}>
+                      <a className="theme-btn" href={btnurl}>
                         {btnname}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ const HeroBanner1 = ({
                             </clipPath>
                           </defs>
                         </svg>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

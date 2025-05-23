@@ -10,8 +10,8 @@ const Home = () => (
       subtitle="<span>📢 ¡Nuevo!</span>Perspectivas Estratégicas para el Sector Concretero 2025"
       title="Entiende el Futuro del Concreto en México"
       content="Descubre el primer análisis especializado del mercado de concreto en México desde la perspectiva de los concreteros independientes. El Reporte AMCI 2025 combina inteligencia de datos, proyecciones regionales, factores económicos clave y oportunidades estratégicas que te permitirán tomar mejores decisiones, anticiparte al cambio y fortalecer tu operación."
-      btnname="📥 Descargar Reporte"
-      btnurl="#"
+      btnname="Descargar Reporte"
+      btnurl="#contacto"
       btntwo="Learn More"
       btn2url="/about"
       cusimg="/assets/images/intro/introProfileThumb1_1.png"
@@ -42,8 +42,8 @@ const Home = () => (
         "Qué tipo de factores impactan el mercado.",
         "Modelo analítico con respaldo de IA aplicada al sector construcción",
       ]}
-      btnname="📥 Descargar Reporte"
-      btnurl="#"
+      btnname="Descargar Reporte"
+      btnurl="#contacto"
     ></About1>
     <HowWork></HowWork>
     <Feature1></Feature1>
