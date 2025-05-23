@@ -27,7 +27,7 @@ const Pricing1 = () => {
       payload.append(key, value);
     }
 
-    fetch("https://script.google.com/macros/s/AKfycbxX2zWVqjZbK1w0QkYPsM1dc2ssSpKrIrx4id6mMKeQwoqMpoKxP-G0jQe9Xh3MT4pP/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzViv_zVZI7a-NZMc20VfHaHTttQpNxwZqoPtmVSK5SnPt_pWO_5igM1kNG_fZ5ITuK/exec", {
       method: "POST",
       body: payload,
     })
