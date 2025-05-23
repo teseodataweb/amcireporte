@@ -66,72 +66,32 @@ const Pricing1 = () => {
             >
               <div className="row gy-5 justify-content-center">
                 <div className="col-lg-6">
-                  <form
+                <form
                     name="contacto"
                     method="POST"
-                    onSubmit={handleSubmit}
+                    action="https://script.google.com/macros/s/AKfycbxX2zWVqjZbK1w0QkYPsM1dc2ssSpKrIrx4id6mMKeQwoqMpoKxP-G0jQe9Xh3MT4pP/exec"
                     className="p-4 shadow rounded bg-white"
                   >
                     <div className="mb-3">
                       <label className="form-label">Nombre</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="nombre"
-                        value={form.nombre}
-                        onChange={handleChange}
-                        required
-                      />
+                      <input type="text" className="form-control" name="nombre" required />
                     </div>
-
                     <div className="mb-3">
                       <label className="form-label">Correo electrónico</label>
-                      <input
-                        type="email"
-                        className="form-control"
-                        name="correo"
-                        value={form.correo}
-                        onChange={handleChange}
-                        required
-                      />
+                      <input type="email" className="form-control" name="correo" required />
                     </div>
-
                     <div className="mb-3">
                       <label className="form-label">Teléfono</label>
-                      <input
-                        type="tel"
-                        className="form-control"
-                        name="telefono"
-                        value={form.telefono}
-                        onChange={handleChange}
-                        required
-                      />
+                      <input type="tel" className="form-control" name="telefono" required />
                     </div>
-
                     <div className="mb-3">
                       <label className="form-label">Empresa</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="empresa"
-                        value={form.empresa}
-                        onChange={handleChange}
-                        required
-                      />
+                      <input type="text" className="form-control" name="empresa" required />
                     </div>
-
                     <div className="mb-3">
                       <label className="form-label">Código Postal</label>
-                      <input
-                        type="number"
-                        className="form-control"
-                        name="codigoPostal"
-                        value={form.codigoPostal}
-                        onChange={handleChange}
-                        required
-                      />
+                      <input type="number" className="form-control" name="codigoPostal" required />
                     </div>
-
                     <button type="submit" className="theme-btn w-100">
                       Solicitar Reporte
                     </button>
