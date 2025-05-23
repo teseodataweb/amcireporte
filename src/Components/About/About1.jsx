@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const About1 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) => {
     return (
         
-        <section className="about-section fix">
+        <section className="about-section fix" id="acercaDe">
             <div className="about-container-wrapper style1">
                 <div className="container">
                     <div className="about-wrapper style1">
