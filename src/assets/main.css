@@ -13088,6 +13088,24 @@ textarea.is-invalid {
   background: #E6E6E6; /* o el color de fondo que prefieras */
 }
 
+.footer-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-col .single-footer-widget {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-col .contact-box {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 :root {
   --body: #fff;
   --black: #000;

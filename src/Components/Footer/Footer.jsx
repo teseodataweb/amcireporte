@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="footer-section position-relative">
       <div className="footer-widgets-wrapper style1 fix">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-stretch">
             <div
               className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".2s"
@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6 footer-info-col">
               <div className="single-footer-widget">
                 <div className="contact-box">
                   <div className="subtitle">Información de contacto AMCI</div>
@@ -206,7 +206,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6">
+            <div className="col-xl-4 col-lg-4 col-md-6 footer-info-col">
               <div className="single-footer-widget">
                 <div className="contact-box">
                   <div className="subtitle">Información de contacto TESEO</div>
