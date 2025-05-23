@@ -20,12 +20,16 @@ const Pricing1 = () => {
     e.preventDefault();
 
     const formElement = e.target;
-    const data = new FormData(formElement);
-    data.append("form-name", "contacto"); // importante para Netlify
+    const formData = new FormData(formElement);
+    const payload = new URLSearchParams();
 
-    fetch("/", {
+    for (const [key, value] of formData.entries()) {
+      payload.append(key, value);
+    }
+
+    fetch("https://script.google.com/macros/s/AKfycbxX2zWVqjZbK1w0QkYPsM1dc2ssSpKrIrx4id6mMKeQwoqMpoKxP-G0jQe9Xh3MT4pP/exec", {
       method: "POST",
-      body: data,
+      body: payload,
     })
       .then(() => {
         setBannerVisible(true);
@@ -38,7 +42,7 @@ const Pricing1 = () => {
         });
       })
       .catch((error) => {
-        console.error("Error al enviar:", error);
+        console.error("Error al enviar a Apps Script:", error);
       });
   };
 
@@ -65,12 +69,9 @@ const Pricing1 = () => {
                   <form
                     name="contacto"
                     method="POST"
-                    data-netlify="true"
                     onSubmit={handleSubmit}
                     className="p-4 shadow rounded bg-white"
                   >
-                    <input type="hidden" name="form-name" value="contacto" />
-
                     <div className="mb-3">
                       <label className="form-label">Nombre</label>
                       <input
