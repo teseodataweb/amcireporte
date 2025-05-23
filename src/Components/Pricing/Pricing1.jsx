@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 const Pricing1 = () => {
-  const [isActive, setIsActive] = useState('monthly');
+  const [isActive, setIsActive] = useState("monthly");
+  const [bannerVisible, setBannerVisible] = useState(false);
+
   const [form, setForm] = useState({
     nombre: "",
     correo: "",
@@ -16,8 +18,28 @@ const Pricing1 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
-    alert("Formulario enviado:\n" + JSON.stringify(form, null, 2));
+
+    const formElement = e.target;
+    const data = new FormData(formElement);
+    data.append("form-name", "contacto"); // importante para Netlify
+
+    fetch("/", {
+      method: "POST",
+      body: data,
+    })
+      .then(() => {
+        setBannerVisible(true);
+        setForm({
+          nombre: "",
+          correo: "",
+          telefono: "",
+          empresa: "",
+          codigoPostal: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error al enviar:", error);
+      });
   };
 
   return (
@@ -32,19 +54,24 @@ const Pricing1 = () => {
         <div className="pricing-wrapper style1">
           <div className="tab-section d-flex justify-content-center align-items-center"></div>
           <div className="tab-content" id="pills-tabContent">
-            <div className={`tab-pane ${isActive === 'monthly' ? 'active' : ''}`} id="pills-monthly" role="tabpanel"
-              aria-labelledby="pills-monthly-tab">
+            <div
+              className={`tab-pane ${isActive === "monthly" ? "active" : ""}`}
+              id="pills-monthly"
+              role="tabpanel"
+              aria-labelledby="pills-monthly-tab"
+            >
               <div className="row gy-5 justify-content-center">
                 <div className="col-lg-6">
-                <form
-                  name="contacto"
-                  method="POST"
-                  data-netlify="true"
-                  className="p-4 shadow rounded bg-white"
-                  onSubmit={handleSubmit}
-                >     
-                  <input type="hidden" name="form-name" value="contacto" />               
-                <div className="mb-3">
+                  <form
+                    name="contacto"
+                    method="POST"
+                    data-netlify="true"
+                    onSubmit={handleSubmit}
+                    className="p-4 shadow rounded bg-white"
+                  >
+                    <input type="hidden" name="form-name" value="contacto" />
+
+                    <div className="mb-3">
                       <label className="form-label">Nombre</label>
                       <input
                         type="text"
@@ -55,6 +82,7 @@ const Pricing1 = () => {
                         required
                       />
                     </div>
+
                     <div className="mb-3">
                       <label className="form-label">Correo electrónico</label>
                       <input
@@ -66,6 +94,7 @@ const Pricing1 = () => {
                         required
                       />
                     </div>
+
                     <div className="mb-3">
                       <label className="form-label">Teléfono</label>
                       <input
@@ -77,6 +106,7 @@ const Pricing1 = () => {
                         required
                       />
                     </div>
+
                     <div className="mb-3">
                       <label className="form-label">Empresa</label>
                       <input
@@ -88,6 +118,7 @@ const Pricing1 = () => {
                         required
                       />
                     </div>
+
                     <div className="mb-3">
                       <label className="form-label">Código Postal</label>
                       <input
@@ -99,10 +130,17 @@ const Pricing1 = () => {
                         required
                       />
                     </div>
+
                     <button type="submit" className="theme-btn w-100">
                       Solicitar Reporte
                     </button>
                   </form>
+
+                  {bannerVisible && (
+                    <div className="alert alert-success mt-3" role="alert">
+                      ¡Formulario enviado exitosamente!
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
