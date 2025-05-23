@@ -24,7 +24,7 @@ const Pricing1 = () => {
     <section className="pricing-section section-padding pt-0 fix" id="contacto">
       <div className="container">
         <div className="section-title text-center mxw-685 mx-auto">
-          <h2 className="title">Adquiere el Reporte AMCI 2025 y Toma Decisiones con Datos Reales</h2>
+          <h2 className="title">Adquiere el Reporte AMCI 2025</h2>
           <p className="text">
             Reporte Completo: Perspectivas del Mercado de Concreto en México 2025
           </p>
@@ -36,8 +36,15 @@ const Pricing1 = () => {
               aria-labelledby="pills-monthly-tab">
               <div className="row gy-5 justify-content-center">
                 <div className="col-lg-6">
-                  <form className="p-4 shadow rounded bg-white" onSubmit={handleSubmit}>
-                    <div className="mb-3">
+                <form
+                  name="contacto"
+                  method="POST"
+                  data-netlify="true"
+                  className="p-4 shadow rounded bg-white"
+                  onSubmit={handleSubmit}
+                >     
+                  <input type="hidden" name="form-name" value="contacto" />               
+                <div className="mb-3">
                       <label className="form-label">Nombre</label>
                       <input
                         type="text"
