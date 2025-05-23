@@ -67,11 +67,12 @@ const Pricing1 = () => {
               <div className="row gy-5 justify-content-center">
                 <div className="col-lg-6">
                 <form
-                    name="contacto"
-                    method="POST"
-                    action="https://script.google.com/macros/s/AKfycbxX2zWVqjZbK1w0QkYPsM1dc2ssSpKrIrx4id6mMKeQwoqMpoKxP-G0jQe9Xh3MT4pP/exec"
-                    className="p-4 shadow rounded bg-white"
-                  >
+                  name="contacto"
+                  method="POST"
+                  action="https://script.google.com/macros/s/AKfycbxX2zWVqjZbK1w0QkYPsM1dc2ssSpKrIrx4id6mMKeQwoqMpoKxP-G0jQe9Xh3MT4pP/exec"
+                  className="p-4 shadow rounded bg-white"
+                  target="_blank" // opcional para no recargar la misma página
+                >
                     <div className="mb-3">
                       <label className="form-label">Nombre</label>
                       <input type="text" className="form-control" name="nombre" required />
@@ -109,6 +110,7 @@ const Pricing1 = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 
