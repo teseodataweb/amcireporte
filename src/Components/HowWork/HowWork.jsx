@@ -36,7 +36,7 @@ const HowWork = () => {
                 >
                   <div className="step">PASO 02</div>
                   <div className="title">RECÍBELO AL INSTANTE</div>
-                  <div className="text">Acceso listo para consulta</div>
+                  <div className="text">Prueba una Demo Instantanea</div>
                 </div>
               </div>
               <div className="col-xl-4">
@@ -45,10 +45,9 @@ const HowWork = () => {
                   data-wow-delay=".6s"
                 >
                   <div className="step">PASO 03</div>
-                  <div className="title">ANALIZA Y CONSULTA</div>
+                  <div className="title">CONSULTA AL REPORTE COMPLETO</div>
                   <div className="text">
-                    Utiliza las gráficas, mapas y proyecciones para tu
-                    estrategia.
+                  Completa tu pago y recibe el informe completo.
                   </div>
                   <div className="maginBottom"></div>
                 </div>

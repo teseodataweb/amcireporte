@@ -3,6 +3,8 @@ import Feature1 from "../Components/Feature/Feature1";
 import HeroBanner1 from "../Components/HeroBanner/HeroBanner1";
 import HowWork from "../Components/HowWork/HowWork";
 import Pricing1 from "../Components/Pricing/Pricing1";
+import Pricing2 from "../Components/Pricing/Pricing2";
+import Services from "../Components/Services/Services1"
 
 const Home = () => (
   <div>
@@ -45,9 +47,15 @@ const Home = () => (
       btnname="Descargar Reporte"
       btnurl="#contacto"
     ></About1>
+    <Services
+    ></Services>
     <HowWork></HowWork>
     <Feature1></Feature1>
-    <Pricing1></Pricing1>
+    <Pricing2></Pricing2>
+    <div style={{ padding: '20px' }}>
+      <Pricing1></Pricing1>
+    </div>
+
   </div>
 );
 

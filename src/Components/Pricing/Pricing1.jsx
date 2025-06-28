@@ -47,7 +47,7 @@ const Pricing1 = () => {
     <section className="pricing-section section-padding pt-0 fix" id="contacto">
       <div className="container">
         <div className="section-title text-center mxw-685 mx-auto">
-          <h2 className="title">Adquiere el Reporte AMCI 2025</h2>
+          <h2 className="title">Regístrate Ahora</h2>
           <p className="text">
             Reporte Completo: Perspectivas del Mercado de Concreto en México 2025
           </p>

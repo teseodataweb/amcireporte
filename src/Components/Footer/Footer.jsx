@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="container">
           <div className="row align-items-stretch">
             <div
-              className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
+              className="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
               data-wow-delay=".2s"
             >
               <div className="single-footer-widget">
@@ -39,36 +39,6 @@ const Footer = () => {
                     basadas en datos para organizaciones que enfrentan retos
                     complejos y dinámicos.
                   </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-xl-2 col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay=".2s"
-            >
-              <div className="single-footer-widget">
-                <div className="widget-head enterText">
-                  <h3>Secciones</h3>
-                </div>
-                <ul className="list-area enterText">
-                  <li>
-                    <a href="#inicio">Home</a>
-                  </li>
-                  <li>
-                    <a href="#acercaDe">Acerca de</a>
-                  </li>
-                  <li>
-                    <a href="#proyectos">Cómo funciona</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="single-footer-widget centerObject">
-                <div className="footer-content">
-                  <div class="store-links">
-                    <div class="apple">
-                      <a href="#contacto">Descargar reporte</a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -226,7 +196,7 @@ const Footer = () => {
                         className="bi bi-telephone-fill"
                         style={{ fontSize: 20, marginRight: 10 }}
                       ></i>
-                      <span>771 330 6407</span>
+                      <span>+52 771 364 9201</span>
                     </li>
                     <li
                       style={{
@@ -243,7 +213,7 @@ const Footer = () => {
                         href="mailto:contacto@teseodata.com"
                         style={{ color: "inherit", textDecoration: "none" }}
                       >
-                        contacto@teseodata.com
+                        direccioncomercial@teseodata.com
                       </a>
                     </li>
                     <li
@@ -258,12 +228,12 @@ const Footer = () => {
                         style={{ fontSize: 20, marginRight: 10 }}
                       ></i>
                       <a
-                        href="https://www.teseodata.com"
+                        href="https://teseodata.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "inherit", textDecoration: "none" }}
                       >
-                        www.teseodata.com
+                        teseodata.com
                       </a>
                     </li>
                     <li

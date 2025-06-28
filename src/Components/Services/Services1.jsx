@@ -6,7 +6,10 @@ const Services1 = () => {
 <section className="service-section section-padding fix">
         <div className="service-container-wrapper style1">
             <div className="container">
+            <h2 className="text-center">¿Qué beneficio obtengo con todos estos datos?</h2>
+
                 <div className="service-wrapper style1">
+                    
                     <div className="row gy-5">
                     {data.map((item, index)=>(
                         <div key={index} className="col-xl-4 col-md-6">
