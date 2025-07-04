@@ -27,6 +27,8 @@ import FaqPage from "../Pages/FaqPage";
 
 export const router = createBrowserRouter([
     {
+      basename: '/reporteconcreto',
+
       path: "/",
       element: <Layout4></Layout4>,
       children: [

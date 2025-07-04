@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className="contact-box">
                   <div className="subtitle">Información de contacto AMCI</div>
                   <div className="widget-head">
-                    ASOSIACION MEXICANA DE CONCRETERO INDEPENDIENTES
+                    ASOCIACIÓN MEXICANA DE CONCRETEROS INDEPENDIENTES
                   </div>
                   <ul
                     className="footer-contact-list"
